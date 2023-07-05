@@ -1,1 +1,2 @@
+#!/bin/bash
 ls -ap | awk '{print substr($0, 1, length($0)-1)}' | sort -d -k1.1,1.1 -k1.2n -k1.2d | tr '\n' ','
